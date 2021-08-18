@@ -1,1 +1,12 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+### Quiz App React
+
+## Build Setup
+
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+```

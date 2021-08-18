@@ -1,0 +1,38 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title,
+.name_title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  span {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.user_input {
+  width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  .input {
+    padding: 10px 20px;
+  }
+}
+
+.name_title {
+  font-size: 1rem;
+}

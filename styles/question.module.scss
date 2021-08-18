@@ -1,0 +1,31 @@
+.answers {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.answer_box {
+  background-color: #eaeaea;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  &:hover {
+    border-color: #79acf8;
+  }
+  &.selected {
+    border-color: #0d6efd;
+    background-color: #0d6efd;
+    color: #fff;
+  }
+}

@@ -30,7 +30,7 @@ const exam = ({ questions }) => {
 
 // This gets called on every request
 export async function getServerSideProps() {
-    const { data } = await axios.get('http://127.0.0.1:5000/questions');
+    const { data } = await axios.get('https://quiz-app-task.herokuapp.com/questions');
     // Pass data to the page via props
     return { props: { questions: data.questions } }
 }

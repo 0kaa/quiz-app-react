@@ -7,7 +7,7 @@ const Questions = ({ question, questionsLength, currentQuestionIndex }) => {
     const [answer, setAnswer] = useState()
     const dispatch = useDispatch()
     const checkCorrectAnswer = async () => {
-        const { data } = await axios.post('http://127.0.0.1:5000/questions/validation', {
+        const { data } = await axios.post('https://quiz-app-task.herokuapp.com/questions/validation', {
             "questionID": question._id,
             "userAnswer": answer
         })
